@@ -1,0 +1,14 @@
+development:
+  bucket: asset_photos
+  access_key_id: <your key>
+  secret_access_key: <your key>
+
+test:
+  bucket: myapptest
+  access_key_id: <your key>
+  secret_access_key: <your key>
+
+production:
+  bucket: asset_photos
+  access_key_id: <your key>
+  secret_access_key: <your key>
