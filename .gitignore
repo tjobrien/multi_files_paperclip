@@ -1,0 +1,12 @@
+config/database.yml
+*~
+*.cache
+*.log
+*.pid
+tmp/**/*
+.DS_Store
+tmp/restart.txt
+db/development.sqlite3
+db/schema.rb
+log/development.log
+public/system/*

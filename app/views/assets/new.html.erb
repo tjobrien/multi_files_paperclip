@@ -1,0 +1,12 @@
+<h1> New Asset</h1>
+<% form_for ([@user, @asset], :html => { :multipart => true }) do |f| %>
+
+  <%= f.error_messages %>
+
+<p>
+	<%= f.label :photo %><br />
+	<%= f.file_field :photo%>
+</p>
+
+<%= f.submit "add photo" %>
+<% end %>

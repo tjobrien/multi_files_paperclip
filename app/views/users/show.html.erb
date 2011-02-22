@@ -1,0 +1,17 @@
+<h1>Welcome <%=h @user.username %></h1>
+
+  <p>
+    <%=label_tag @user.username %><br />
+    <%=h @user.username %>
+  </p>
+  <p>
+    <%=label_tag "Email Address" %><br />
+    <%=h @user.email %>
+  </p>
+	<table><tr>
+	<% @user.assets.each do |ass| %>
+	<td><%= image_tag image_tag ass.photo.url %></td>
+	<% end %>
+	</tr></table>
+
+	<%= link_to 'Add Photos!',  new_user_asset_path(@user) %>
