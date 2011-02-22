@@ -10,7 +10,7 @@
   </p>
 	<table><tr>
 	<% @user.assets.each do |ass| %>
-	<td><%= image_tag image_tag ass.photo.url %></td>
+	<td><%= image_tag ass.photo.url(:thumb) %></td>
 	<% end %>
 	</tr></table>
 
